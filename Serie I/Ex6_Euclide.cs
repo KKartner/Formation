@@ -10,14 +10,30 @@ namespace Serie_I
     {
         public static int Pgcd(int a, int b)
         {
-            //TODO
-            return -1;
+            bool isTrue = false;
+            if (b != 0)
+            {
+                while (isTrue == false)
+                {
+                    int reste = a % b;
+                    if (reste != 0)
+                    {
+                        a = b;
+                        b = reste;
+                    }
+                    else
+                    {
+                        isTrue = true;
+                    }
+                }
+            }
+            return b;
         }
 
         public static int PgcdRecursive(int a, int b)
         {
-            //TODO
-            return -1;
+            int tmp = Pgcd(1, 2);
+            return tmp;
         }
     }
 }

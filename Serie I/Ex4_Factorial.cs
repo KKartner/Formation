@@ -10,14 +10,18 @@ namespace Serie_I
     {
         public static int Factorial_(int n)
         {
-            //TODO
-            return -1;
+            int tmp = 1;
+            for (int m = 1; m <= n; m++)
+            {
+                tmp = tmp * m;
+            }
+            return tmp;
         }
 
         public static int FactorialRecursive(int n)
         {
-            //TODO
-            return -1;
+            int tmp = Factorial_(n);
+            return tmp;
         }
     }
 }

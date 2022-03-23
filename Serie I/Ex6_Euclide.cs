@@ -26,13 +26,18 @@ namespace Serie_I
                         isTrue = true;
                     }
                 }
+                return b;
             }
-            return b;
+            else
+            {
+                return a;
+            }
+            
         }
 
         public static int PgcdRecursive(int a, int b)
         {
-            int tmp = Pgcd(1, 2);
+            int tmp = Pgcd(a, b);
             return tmp;
         }
     }

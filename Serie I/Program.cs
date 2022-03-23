@@ -31,8 +31,27 @@ namespace Serie_I
             Pyramid.PyramidConstruction(10, true);
             Console.WriteLine("");
             PrimeNumbers.DisplayPrimes();
-            int test = Euclide.Pgcd(221, 782);
+            int test = Euclide.PgcdRecursive(221, 782);
             Console.WriteLine(test);
+
+            bool test2 = false;
+            if (test2)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            int test3 = 2 % 2;
+            if (test3 == 0)
+            {
+                Console.WriteLine("Pair");
+            }
+            else
+            {
+                Console.WriteLine("Impair");
+            }
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
